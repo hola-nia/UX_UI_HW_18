@@ -59,26 +59,18 @@ ul {
 
   .workGrid {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas:
-      "project1 project2"
-      "project3 project4";
+      "project1 project4";
   }
+  
+  
   
   .project1 {
-    grid-area: project1;
-  }
-  
-  .project2 {
-    grid-area: project2;
-  }
-  
-  .project3 {
     grid-area: project3;
   }
   
-  .project4 {
+  .project2 {
     grid-area: project4;
   }
   @media only screen and (max-width: 600px) {
@@ -97,10 +89,8 @@ ul {
     /* Grid container */
     .workGrid {
       grid-template-areas:
-        "img1 title1"
-        "img2 title2"
-        "img3 title3"
-        "img4 title4";
+        "img1 title"
+        "img2 title2";
       grid-template-rows: repeat(4, auto);
       grid-template-columns: 1fr 2fr;
     }
